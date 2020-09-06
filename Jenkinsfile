@@ -8,7 +8,7 @@ pipeline {
     stage('Build') {
       steps {
         container('python3') {
-          sh "python --version"   
+          sh "python -c 'import os; print(os.getcwd())'"   
         }
       }
     }
