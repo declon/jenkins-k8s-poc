@@ -15,7 +15,7 @@ pipeline {
     stage('Ubuntu') {
       steps {
         container('ubuntu') {
-          sh "python ./script.sh"
+          sh "./script.sh"
         }
       }
     }
