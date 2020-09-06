@@ -4,5 +4,6 @@ spec:
   containers:
     - name: python3
       image: python:3.8.5
-      command: cat
+      command: 
+      - cat
       tty: true
