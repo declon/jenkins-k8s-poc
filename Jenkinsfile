@@ -5,10 +5,17 @@ pipeline {
     }
   }
   stages {
-    stage('Build') {
+    stage('Python') {
       steps {
         container('python3') {
           sh "python ./script.py"
+        }
+      }
+    }
+    stage('Ubuntu') {
+      steps {
+        container('ubuntu') {
+          sh "python ./script.sh"
         }
       }
     }
