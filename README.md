@@ -12,6 +12,6 @@
 helm search hub jenkins
 helm repo add jenkinsci https://charts.jenkins.io
 helm repo update
-helm install test-jenkins jenkinsci/jenkins
+helm install test-jenkins jenkinsci/jenkins 
 ~~~
 
